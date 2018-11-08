@@ -14,6 +14,7 @@
 */
 
 /* HTML Styles */
+/* Adds background image  */
 html {
     background-image: url(sd_back1.png);
     background-attachment: fixed;
@@ -22,6 +23,7 @@ html {
 
 
 /* Body Styles */
+/* Adds background image and adds gradients in the background image */
 body {
     background: url(sd_back2.png),
         radial-gradient(circle closest-corner at 40% 70%, white 15%, rgba(151, 151, 151, 0.5) 50%),
@@ -35,13 +37,26 @@ body {
 
 
 /* Navigation List Styles */
+/* Adds a gross border around the nav. */
 body>header a {
     border: 5px outset rgb(211, 211, 255);
 }
 
 /* Section Left Styles */
+/* Flips the image around and adds a shadow behind the image */
+section#left article h1 {
+    color: rgb(211, 211, 211);
+    text-shadow: black 0 0 5px;
+}
 
-
-
+section#left img#mportrait {
+    filter: drop-shadow(rgba(51, 51, 51, 0.9) -15px 0 5px) grayscale(0.7) opacity(0.6);
+    -webkit-filter: drop-shadow(rgba(51, 51, 51, 0.9) -15px 0 5px) grayscale(0.7) opacity(0.6);
+    transform: rotateY(180deg)
+}
 
 /* Footer Styles */
+/* Adds a border over the footer */
+footer {
+    border-top: 2px solid rgb(171, 171, 171);
+}
